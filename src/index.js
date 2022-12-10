@@ -4,6 +4,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 import { Login, Registration } from "./modules/account/pages";
 import { Main } from "./modules/main/pages";
+import { Page404 } from "./shared";
 
 import "./index.css";
 
@@ -12,7 +13,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path={'/'} element={<Main />} />
+        <Route path={"/"} element={<Main />} />
+        <Route path={"/login"} element={<Login />} />
+        <Route path={"/registration"} element={<Registration />} />
+        <Route path={"*"} element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
