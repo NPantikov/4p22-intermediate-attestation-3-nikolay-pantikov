@@ -1,1 +1,0 @@
-# 4p22-intermediate-attestation-3-nikolay-pantikov
